@@ -10,3 +10,9 @@ s3.conf
 
 # extra
 /vendor/*
+
+# mac os x
+.DS_Store
+
+# netlify
+.netlify

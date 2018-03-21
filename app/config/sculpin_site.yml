@@ -4,6 +4,4 @@
 title: Sculpin Blog Skeleton
 subtitle: To Get You Started
 
-# Insert your disqus shortname
-#disqus:
-#    shortname:
+google_analytics_tracking_id: ~
