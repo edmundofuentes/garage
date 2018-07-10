@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Vampiro+One|Exo:400,400i,700,700i|Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Vampiro+One|Nunito+Sans:400,400i,700,700i|Roboto+Mono");
 code {
   padding: 2px 4px;
   font-size: 90%;
@@ -116,7 +116,7 @@ html, body {
   padding: 0;
   background-color: #F0F0F0;
   color: #000000;
-  font-family: "Exo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5em; }
 
@@ -133,13 +133,12 @@ html, body {
   padding: 0;
   text-align: center; }
   #header .title {
-    font-size: 40px;
     margin: 0;
     padding: 30px 15px 15px 15px; }
   #header .subtitle {
     margin: 0;
     padding: 15px 15px;
-    font-family: "Exo", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
     font-weight: bold; }
   #header .navigation .nav-wrapper ul {
@@ -211,7 +210,7 @@ article header .datetime {
   width: 100%;
   text-align: center;
   color: #404040;
-  font-family: "Exo", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   margin-bottom: 20px;
   font-style: italic;
@@ -276,7 +275,7 @@ img[src$='#profile-picture'] {
       padding: 15px 10px; } }
 
 .list-item {
-  padding-bottom: 20x; }
+  padding-bottom: 20px; }
   .list-item .image-left {
     float: left;
     margin-right: 20px; }
@@ -292,4 +291,19 @@ img[src$='#profile-picture'] {
   .list-item .subtitle {
     font-size: 14px; }
 
-/*# sourceMappingURL=style-orange.css.map */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+#header .title {
+  font-size: 40px;
+  line-height: 35px; }
+
+.about-cover {
+  max-width: 100%;
+  border-radius: 10px; }
+
+.footnote {
+  font-size: small;
+  font-style: italic;
+  text-align: right;
+  margin-top: 0; }
