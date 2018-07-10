@@ -5,14 +5,21 @@
 /app/config/sculpin_site_*.yml
 /app/logs/*
 /output_*/
+/node_modules/*
 /source/components/
 s3.conf
 
 # extra
 /vendor/*
 
-# mac os x
-.DS_Store
+# Prepros
+prepros-6.conf
+prepros-6.config
 
-# netlify
+# macOS
+.DS_Store
+Thumbs.db
+
+# Netlify
 .netlify
+netlify.toml
