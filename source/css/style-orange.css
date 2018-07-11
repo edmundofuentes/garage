@@ -21,6 +21,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Vampiro One", sans-serif;
+  font-weight: 400;
   margin-top: 2em; }
 
 p {
@@ -290,9 +291,6 @@ img[src$='#profile-picture'] {
     padding-bottom: 3px; }
   .list-item .subtitle {
     font-size: 14px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
 
 #header .title {
   font-size: 40px;
