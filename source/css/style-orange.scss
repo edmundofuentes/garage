@@ -3,6 +3,7 @@ $primary: #ff5722;
 $primary-light: #ff7043;
 
 $black: #000000;
+$lighter-gray: #F9F9F9;
 $light-gray: #F0F0F0;
 $medium-gray: #A0A0A0;
 $dark-gray: #404040;
@@ -63,4 +64,81 @@ $font-code: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
   font-style: italic;
   text-align: right;
   margin-top: 0;
+}
+
+.slider {
+  .slider-image {
+    width: 100%;
+  }
+}
+
+.spec-table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+
+  font-size: 14px;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  thead {
+    th, td {
+      border-bottom: 2px solid black;
+    }
+  }
+
+  tbody {
+    tr:nth-child(odd) {
+      th, td {
+        background-color: $lighter-gray;
+      }
+    }
+  }
+
+  th, td {
+    margin: 0;
+    padding: 2px 2px;
+    //border: 1px solid black;
+    text-align: center;
+  }
+  td {
+    font-family: $font-code;
+  }
+}
+
+.component-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+
+  th, td {
+    margin: 0;
+    padding: 2px 2px;
+  }
+
+  th {
+    text-align: left;
+    width: 200px;
+  }
+
+  td {
+    padding-left: 10px;
+  }
+
+  tr:nth-child(odd) {
+    th, td {
+      background-color: $lighter-gray;
+    }
+  }
+}
+
+@media screen and (max-width:760px) {
+  .component-table {
+    th {
+      width: 110px;
+    }
+  }
 }

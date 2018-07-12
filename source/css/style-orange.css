@@ -305,3 +305,46 @@ img[src$='#profile-picture'] {
   font-style: italic;
   text-align: right;
   margin-top: 0; }
+
+.slider .slider-image {
+  width: 100%; }
+
+.spec-table {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+  .spec-table thead th, .spec-table thead td {
+    border-bottom: 2px solid black; }
+  .spec-table tbody tr:nth-child(odd) th, .spec-table tbody tr:nth-child(odd) td {
+    background-color: #F9F9F9; }
+  .spec-table th, .spec-table td {
+    margin: 0;
+    padding: 2px 2px;
+    text-align: center; }
+  .spec-table td {
+    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace; }
+
+.component-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 14px; }
+  .component-table th, .component-table td {
+    margin: 0;
+    padding: 2px 2px; }
+  .component-table th {
+    text-align: left;
+    width: 200px; }
+  .component-table td {
+    padding-left: 10px; }
+  .component-table tr:nth-child(odd) th, .component-table tr:nth-child(odd) td {
+    background-color: #F9F9F9; }
+
+@media screen and (max-width: 760px) {
+  .component-table th {
+    width: 110px; } }
+
+/*# sourceMappingURL=style-orange.css.map */
