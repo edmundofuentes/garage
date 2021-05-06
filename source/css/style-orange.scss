@@ -30,8 +30,21 @@ $font-code: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
   .image-left {
     float: left;
     margin-right: 20px;
+
+    width: 80px;
+    height: 80px;
+
+    .image-helper {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
     img {
       border-radius: 5px;
+      vertical-align: middle;
+      width: 80px;
+      height: auto;
     }
   }
 

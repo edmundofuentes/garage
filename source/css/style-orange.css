@@ -340,9 +340,19 @@ img[src$="#profile-picture"] {
 .list-item .image-left {
   float: left;
   margin-right: 20px;
+  width: 80px;
+  height: 80px;
+}
+.list-item .image-left .image-helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 .list-item .image-left img {
   border-radius: 5px;
+  vertical-align: middle;
+  width: 80px;
+  height: auto;
 }
 .list-item .discipline {
   font-family: "Permanent Marker", sans-serif;
