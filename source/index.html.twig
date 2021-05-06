@@ -1,71 +1,29 @@
 ---
-layout: default
-title: Home
-generator: pagination
-pagination:
-max_per_page: 2
-use:
-- posts
+layout: simple-page
+title: About
 ---
-{% for post in page.pagination.items %}
-    <article class="clearfix">
-        <header>
-            <h2 class="title"><a class="hover-underline" href="{{ site.url }}{{ post.url }}">{{ post.title }}</h2>
-            <h5 class="datetime"><a class="hover-underline" href="{{ site.url }}{{ post.url }}">Posted on {{ post.date|date("l") }} {{ post.date|date("F") }} {{ post.date|date("jS") }}, {{ post.date|date("Y") }}</a></h5>
-        </header>
-        <div class="spacer"></div>
-        <div class="post-content">
-            {{ post.blocks.content|raw }}
-        </div>
 
-        {#
-        {% if post.categories %}
-        <div class="tag-list">
-            <span class="icon"><i class="fa fa-folder-open"></i></span>
-            {% for category in post.categories %}
-            <a class="tag" href="{{ site.url }}/blog/tags/{{ category|url_encode(true) }}">{{ category }}</a>
-            {% endfor %}
-        </div>
-        {% endif %}
-        {% if post.tags %}
-        <div class="tag-list">
-            <span class="icon"><i class="fa fa-tag"></i></span>
-            {% for tag in post.tags %}
-            <a class="tag" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
-            {% endfor %}
-        </div>
-        {% endif %}
-        #}
-    </article>
+<img class="about-cover" src="{{ site.url }}/images/mundo-transierra-norte-crop.jpg" alt="Edmundo Fuentes Transierra Norte" />
+<p class="footnote">Edmundo Fuentes @ <a href="https://www.transierranorte.com/" target="_blank">TranSierra Norte</a> 2017. Photo by <a href="http://www.twowheeledjunkie.photo/" target="_blank">Nicolas Switalski</a>.</p>
 
-    {% if not loop.last %}
-        <hr>
-        <br>
-    {% endif %}
-{% endfor %}
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan magna finibus nunc maximus, tempor pharetra odio suscipit. Nulla varius lorem vitae felis posuere, maximus accumsan odio tincidunt. Donec lectus purus, scelerisque eu diam vel, pulvinar euismod sapien. Donec eleifend ligula risus, sed molestie est venenatis ac. Vestibulum erat urna, efficitur ac lorem sit amet, rhoncus placerat dolor. Sed non nunc mattis, faucibus quam eu, rhoncus est. Nunc lobortis nisi id dolor ornare ultricies. Ut et odio at ligula egestas elementum. Vivamus eleifend, lacus et iaculis placerat, tortor massa rhoncus augue, quis aliquet magna erat sed est.
+</p>
 
-{# this section is inversed.. oh well, i'll fix it later #}
-{% if page.pagination.previous_page or page.pagination.next_page %}
-    <div class="spacer"></div>
-    <nav class="article">
-        {% if page.pagination.previous_page %}
-            <div class="previous">
-                <div class="direction">
-                    <a class="hover-underline" href="{{ site.url }}{{ page.pagination.previous_page.url }}">
-                        <i class="fa fa-arrow-circle-left"></i> Newer Posts
-                    </a>
-                </div>
-            </div>
-        {% endif %}
-        {% if page.pagination.next_page %}
-            <div class="next">
-                <div class="direction">
-                    <a class="hover-underline" href="{{ site.url }}{{ page.pagination.next_page.url }}">
-                        Older Posts <i class="fa fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div>
-        {% endif %}
-    </nav>
+<p>
+    Phasellus suscipit felis quis quam dapibus gravida. Quisque porta varius ligula a luctus. Aenean imperdiet fringilla eros a interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in nisl a elit molestie vulputate. Duis eget justo non odio faucibus accumsan. Nam facilisis et felis eu aliquam. Ut sit amet libero fermentum, varius enim vel, laoreet eros. Quisque lobortis sem eu ante sodales, vel efficitur felis congue. Nullam sit amet odio erat. Phasellus tincidunt diam eu pulvinar scelerisque. Morbi rhoncus cursus augue et facilisis.
+</p>
 
-{% endif %}
+<p>
+    <strong>Height:</strong> 183 cm<br>
+    <strong>Weight:</strong> 65 kg
+</p>
+
+<div class="spacer"></div>
+
+<ul class="social-links">
+    <li><a class="hover-underline" href="https://www.instagram.com/edmundofuentesr" target="_blank"><i class="fab fa-instagram fa-fw"></i> edmundofuentesr</a></li>
+    <li><a class="hover-underline" href="https://www.twitter.com/edmundofuentes" target="_blank"><i class="fab fa-twitter fa-fw"></i> edmundofuentes</a></li>
+    <li><a class="hover-underline" href="https://edmundofuentes.tumblr.com" target="_blank"><i class="fab fa-tumblr fa-fw"></i> edmundofuentes</a></li>
+</ul>
+

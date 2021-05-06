@@ -23,3 +23,7 @@ Thumbs.db
 # Netlify
 .netlify
 netlify.toml
+
+# JetBrains IDEA
+/.idea/*
+!/.idea/.name
