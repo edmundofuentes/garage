@@ -437,6 +437,10 @@ img[src$="#profile-picture"] {
 .component-table tr:nth-child(odd) th, .component-table tr:nth-child(odd) td {
   background-color: #F9F9F9;
 }
+.component-table thead th, .component-table thead td {
+  border-bottom: 2px solid black;
+  background-color: #FFFFFF !important;
+}
 
 .badge {
   text-align: center;

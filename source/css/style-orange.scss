@@ -155,6 +155,13 @@ $font-code: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
       background-color: $lighter-gray;
     }
   }
+
+  thead {
+    th, td {
+      border-bottom: 2px solid black;
+      background-color: $white !important;
+    }
+  }
 }
 
 .badge {
