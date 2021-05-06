@@ -147,10 +147,7 @@ $font-code: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
   th {
     text-align: left;
     width: 200px;
-  }
-
-  td {
-    padding-left: 10px;
+    padding-right: 10px;
   }
 
   tr:nth-child(odd) {

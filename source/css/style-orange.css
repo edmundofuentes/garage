@@ -432,9 +432,7 @@ img[src$="#profile-picture"] {
 .component-table th {
   text-align: left;
   width: 200px;
-}
-.component-table td {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 .component-table tr:nth-child(odd) th, .component-table tr:nth-child(odd) td {
   background-color: #F9F9F9;
